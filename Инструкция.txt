@@ -1,0 +1,17 @@
+1. Команда запуска теста для быстроформирующихся отчетов:
+pytest -s -v -m fast --alluredir=C:\Users\St\PycharmProjects\test\allure_res
+
+2. Команда запуска теста для долгоформирующися отчетов:
+pytest -s -v -m long --alluredir=C:\Users\St\PycharmProjects\test\allure_res
+
+3. Команда для запуска всех тестов:
+pytest --alluredir=C:\Users\St\PycharmProjects\test\allure_res pytest_reports.py
+
+4. Запустить конкретный тест:
+pytest -s -v -m fast --alluredir=C:\Users\St\PycharmProjects\test\allure_res C:\Users\St\PycharmProjects\test\Tests\test_otchet_18.py
+
+5. Комнадна для установки всех библиотек:
+pip install -r requirements.txt
+
+6. Команда для запуска allure в PowerShell
+allure serve allure_res
